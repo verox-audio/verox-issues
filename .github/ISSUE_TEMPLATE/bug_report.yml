@@ -1,0 +1,79 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: dropdown
+    id: solution
+    attributes:
+      label: Solution
+      description: Which streaming solution are you using when this bug appears?
+      options:
+        - Roon (Default)
+        - HQPlayer
+        - AirPlay
+        - Squeezebox
+        - Spotify Connect
+        - Snapcast
+        - UPnP
+        - Sonik Spinner
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of Sonik are you running? (find this on the Advanced tab)
+      placeholder: e.g. 2026.08.2
+    validations:
+      required: true
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: Hardware
+      description: Which hardware are you using?
+      options:
+        - Raspberry Pi 5
+        - Raspberry Pi 5 Compute Module
+        - Raspberry Pi 4
+        - Raspberry Pi 4 Compute Module
+        - Raspberry Pi 3
+        - Raspberry Pi 3 Compute Module
+        - Raspberry Pi Zero 2 W
+        - Allo Usbridge (Signature)
+        - Orchard Audio PecanPi+
+    validations:
+      required: true
+  - type: input
+    id: feedback
+    attributes:
+      label: Sonik Feedback ID
+      description: Please provide the Feedback ID. You can find this by clicking 'Send Feedback' on the 'Advanced' tab in Sonik's web interface.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional information
+      description: Provide additional information, if you think this helps in any way.
+      render: shell
