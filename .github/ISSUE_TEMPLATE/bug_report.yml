@@ -36,14 +36,14 @@ body:
         - Spotify Connect
         - Snapcast
         - UPnP
-        - Sonik Spinner
+        - Verox Spinner
     validations:
       required: true
   - type: input
     id: version
     attributes:
       label: Version
-      description: What version of Sonik are you running? (find this on the Advanced tab)
+      description: What version of Verox are you running? (find this on the Advanced tab)
       placeholder: e.g. 2026.08.2
     validations:
       required: true
@@ -67,8 +67,8 @@ body:
   - type: input
     id: feedback
     attributes:
-      label: Sonik Feedback ID
-      description: Please provide the Feedback ID. You can find this by clicking 'Send Feedback' on the 'Advanced' tab in Sonik's web interface.
+      label: Verox Feedback ID
+      description: Please provide the Feedback ID. You can find this by clicking 'Send Feedback' on the 'Advanced' tab in Verox's web interface.
     validations:
       required: true
   - type: textarea

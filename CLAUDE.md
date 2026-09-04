@@ -1,5 +1,5 @@
-@../sonik-ai/CLAUDE.md
+@../verox-ai/CLAUDE.md
 
-# sonik-issues
+# verox-issues
 
-Public issue tracker (bug reports/feature requests) for Sonik — no code. A fresh repo, not migrated from `RoPieee/RoPieee`. Shared Sonik context is imported above from `../sonik-ai/CLAUDE.md`.
+Public issue tracker (bug reports/feature requests) for Verox — no code. A fresh repo, not migrated from `RoPieee/RoPieee`. Shared Verox context is imported above from `../verox-ai/CLAUDE.md`.
