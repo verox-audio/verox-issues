@@ -34,17 +34,21 @@ body:
         - AirPlay
         - Squeezebox
         - Spotify Connect
-        - Snapcast
         - UPnP
         - Verox Spinner
     validations:
       required: true
-  - type: input
+  # On every stable release (including point releases), add the new version
+  # at the top of this list, quoted (unquoted YAML turns 2026.10 into the
+  # number 2026.1). See "On every stable release" in
+  # verox-ai/CLAUDE.md.
+  - type: dropdown
     id: version
     attributes:
       label: Version
-      description: What version of Verox are you running? (find this on the Advanced tab)
-      placeholder: e.g. 2026.08.2
+      description: Which version of Verox are you running? You'll find it on the Advanced tab.
+      options:
+        - "2026.09"
     validations:
       required: true
   - type: dropdown
