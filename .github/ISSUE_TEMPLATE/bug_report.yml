@@ -48,6 +48,7 @@ body:
       label: Version
       description: Which version of Verox are you running? You'll find it on the Advanced tab.
       options:
+        - "2026.09.1"
         - "2026.09"
     validations:
       required: true
